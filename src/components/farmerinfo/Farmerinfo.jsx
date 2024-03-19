@@ -87,7 +87,7 @@ const Form = () => {
 
         setPasswordError({
             length: isLengthValid ? 'Correct' : 'Must be at least 8 characters long.',
-            specialChar: containsSpecialChar ? 'Correct' : 'Must contain at least one special character (!@#$%^&*).'
+            specialChar: containsSpecialChar ? 'Correct' : 'Must contain at least one special character.'
         });
     };
 
