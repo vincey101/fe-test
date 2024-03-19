@@ -28,8 +28,9 @@ const Form = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const [passwordError, setPasswordError] = useState('');
     const [profileImage, setProfileImage] = useState(null);
+    const [passwordError, setPasswordError] = useState({ length: '', specialChar: '' });
+    const [passwordTouched, setPasswordTouched] = useState(false);
 
 
 
@@ -60,9 +61,16 @@ const Form = () => {
     };
 
 
+    // const handlePasswordChange = (e) => {
+    //     const value = e.target.value;
+    //     setPassword(value);
+    //     validatePassword(value);
+    // };
+
     const handlePasswordChange = (e) => {
         const value = e.target.value;
         setPassword(value);
+        setPasswordTouched(true);
         validatePassword(value);
     };
 
@@ -247,13 +255,17 @@ const Form = () => {
                                 className='confirm-password'
                             />
                         </div>
-                        <div className={`error-message ${passwordError.length === 'Correct' ? 'correct' : 'incorrect'}`}>
-                            {passwordError.length}
-                        </div>
-                        <div className={`error-message ${passwordError.specialChar === 'Correct' ? 'correct' : 'incorrect'}`}>
-                            {passwordError.specialChar}
-                        </div>
 
+                        {passwordTouched && (
+                            <>
+                                <div className={`error-message ${passwordError.length === 'Correct' ? 'correct' : 'incorrect'}`}>
+                                    {passwordError.length}
+                                </div>
+                                <div className={`error-message ${passwordError.specialChar === 'Correct' ? 'correct' : 'incorrect'}`}>
+                                    {passwordError.specialChar}
+                                </div>
+                            </>
+                        )}
 
                         <div className="profile-section" >
                             {profileImage ? (

@@ -41,6 +41,8 @@
 
                 p {
                     margin-bottom: 10px;
+                    font-family: "Raleway", sans-serif;
+                    font-size: 14px;
                 }
 
                 label {
@@ -185,12 +187,16 @@
                     }
                 }
 
-                .error {
-                    color: red;
-                }
+                .error-message {
+                    &.correct {
+                        color: green;
+                        font-size: 14px;
+                    }
 
-                .success {
-                    color: green;
+                    &.incorrect {
+                        color: red;
+                        font-size: 14px;
+                    }
                 }
 
                 .profile-section {
@@ -198,6 +204,7 @@
                     text-align: center;
                     align-items: center;
                     gap: 25px;
+                    margin-top: 25px;
 
                     img {
                         border-radius: 50%;
