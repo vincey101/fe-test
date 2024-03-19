@@ -1,0 +1,41 @@
+.button-section {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+
+    .back,
+    .continue {
+        width: 14vw;
+        height: 3vw;
+        font-size: 1vw;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .back {
+        border: 1px solid grey;
+        background-color: white;
+        color: rgb(74, 74, 74);
+    }
+
+    .continue {
+        color: white;
+        background-color: #189B62;
+        border: none;
+        outline: none;
+    }
+
+    @media (max-width: 768px) {
+
+        .back,
+        .continue {
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+}

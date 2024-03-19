@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    gap: 7%;
+
+    .image-container {
+        flex: 1;
+        margin-left: 50px;
+
+        .security-image {
+
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-container {
+
+        .create-account {
+            margin: 70px;
+
+            h2,
+            h4 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-top: 25px;
+            }
+
+            .fingerprints {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+
+                img {
+                    max-width: 30px;
+                    height: auto;
+                    margin-top: 19px;
+                    margin-left: 12px;
+                }
+
+                p {
+                    text-align: center;
+                    margin-top: 5px;
+                    font-size: 13px;
+                }
+            }
+
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                margin-top: 40px;
+                margin-left: 15em;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 3px;
+                width: 100px;
+                margin-bottom: 30px;
+
+                input[type="checkbox"] {
+                    accent-color: #189B62;
+                }
+
+                label {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .image-container,
+        .text-container {
+            flex: none;
+            width: 80%;
+            margin-bottom: 20px;
+
+        }
+
+        .text-container {
+            margin-left: 50px;
+        }
+    }
+}

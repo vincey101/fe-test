@@ -1,0 +1,42 @@
+.headerlinks {
+    width: 100%;
+    margin-top: 25px;
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .account {
+            display: flex;
+            gap: 5px;
+            margin-left: 15em;
+
+            .login {
+                color: #189B62;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .links {
+            justify-content: flex-start;
+            gap: 30px;
+            margin-left: 0;
+
+            .account {
+                margin-left: 0;
+            }
+        }
+    }
+}

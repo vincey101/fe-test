@@ -1,0 +1,104 @@
+.container {
+    // display: flex;
+    position: relative;
+
+    .image-container {
+        // order: 1;
+        margin: 45px;
+        max-width: 32%;
+
+        margin-left: 5em;
+
+        .bankdetails-image {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .radio-container {
+        position: absolute;
+        top: 0;
+        right: 13em;
+        // order: 2;
+        margin-left: 10px;
+
+        .account-container {
+            margin: 50px;
+            width: 100%;
+            max-width: 400px;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            .smartphone-radio {
+                input[type="radio"] {
+                    transform: scale(0.8);
+                    accent-color: #189B62;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .bank-radio {
+                input[type="radio"] {
+                    transform: scale(0.8);
+                    accent-color: #189B62;
+                }
+            }
+
+            .bank-fields {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .bank-fields label {
+                margin-bottom: 5px;
+            }
+
+            .bank-fields select,
+            .bank-fields input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+
+    }
+
+    .radio-container input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    .radio-container label {
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .image-container,
+        .radio-container {
+            position: static;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .radio-container {
+            margin-top: 20px;
+            margin-left: 2em;
+        }
+    }
+}
