@@ -1,15 +1,335 @@
+// .farmreg-container {
+//     position: relative;
+//     display: flex;
+//     gap: 7%;
+
+//     .image-container {
+//         flex: 1;
+//         margin-right: 20px;
+//         margin: 45px;
+//         max-width: 32%;
+
+//         position: relative;
+
+//         .farm-image {
+//             width: 100%;
+//             height: auto;
+//         }
+
+//         .modal {
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             background-color: rgba(0, 0, 0, 0.5);
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             z-index: 99;
+
+//             .modal-container {
+
+//                 z-index: 1000;
+//                 border: 1px solid grey;
+//                 background-color: white;
+//                 width: 30%;
+//                 height: 40%;
+//                 padding: 20px;
+//                 border-radius: 8px;
+
+//                 .modal-content {
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     margin-right: 75px;
+
+//                     .modal-logo {
+//                         width: 15%;
+//                         height: 15%;
+//                         margin-left: 60px;
+//                     }
+
+
+//                     h3 {
+//                         margin-left: 4em;
+//                         margin-bottom: 9px;
+//                     }
+
+//                     p {
+//                         font-size: 12px;
+//                         margin-left: 7em;
+//                         margin-bottom: 14px;
+//                         font-family: "Raleway", sans-serif;
+//                         font-size: 14px;
+//                     }
+
+//                     .modal-button {
+//                         width: 150px;
+//                         height: 50px;
+
+//                         .modal-button2 {
+//                             border: 1px solid grey;
+//                             background-color: white;
+//                             width: 17vw;
+//                             height: 3vw;
+//                             font-size: 1vw;
+//                             border-radius: 5px;
+//                             cursor: pointer;
+//                             color: rgb(74, 74, 74);
+//                             margin-top: 15px;
+//                         }
+
+//                         .modal-button1 {
+//                             color: white;
+//                             background-color: #17714a;
+//                             width: 17vw;
+//                             height: 3vw;
+//                             font-size: 1vw;
+//                             border-radius: 5px;
+//                             cursor: pointer;
+//                             outline: none;
+//                             border-color: transparent;
+//                         }
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+
+//     }
+
+
+
+//     .farmreg {
+//         flex: 1;
+//         max-width: 550px;
+
+//         .farmreg-form-container {
+//             margin: 40px;
+//             width: 350px;
+//         }
+
+//         h1,
+//         h3,
+//         p {
+//             margin-bottom: 15px;
+//             font-family: "Raleway", sans-serif;
+//             font-size: 14px;
+//         }
+
+
+//         label {
+//             display: block;
+//             margin-bottom: 7px;
+//         }
+
+//         input[type="text"],
+//         select {
+//             width: 100%;
+//             padding: 10px;
+//             margin-bottom: 10px;
+//             border-radius: 5px;
+//             border: 1px solid #ccc;
+
+//             &:focus {
+//                 outline: none;
+//             }
+//         }
+
+//         .reg-container {
+
+//             .farmcord {
+//                 display: flex;
+//                 gap: 10px;
+
+//                 input[type="text"] {
+//                     flex: 1;
+//                     padding: 10px;
+//                     border: 1px solid #ccc;
+//                     border-radius: 5px;
+//                 }
+//             }
+
+//             .cord-text {
+//                 color: grey;
+//                 font-size: 12px;
+//             }
+//         }
+
+//         .card-section {
+//             background-color: #f3f3f3;
+//             margin: 3px;
+//             padding: 15px;
+//             border-radius: 10px;
+
+//             .topcard-action {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+
+//                 .crop-number {
+//                     color: grey;
+//                     font-size: 14px;
+//                     margin-right: auto;
+//                 }
+
+//                 .delete-button {
+//                     border: none;
+//                     width: 10px;
+//                     margin-left: auto;
+//                     margin-bottom: 16px;
+//                 }
+
+
+//             }
+
+//             .month-select {
+//                 display: flex;
+//                 gap: 7%;
+
+//                 .start-month,
+//                 .end-month {
+//                     width: calc(50% - 8px);
+//                 }
+
+//                 label {
+//                     font-size: 14px;
+//                 }
+
+//             }
+
+//         }
+
+//         .add-crop {
+//             border: 1px solid #189B62;
+//             margin-top: 7px;
+//             border-radius: 5px;
+//             padding: 3px;
+//             color: #189B62;
+//             font-weight: bold;
+//             font-size: 12px;
+//             background-color: #eafbf4;
+//             // margin-bottom: 10px;
+//         }
+
+//         .upload-text {
+//             margin-top: 20px;
+
+//         }
+
+//         .upload-section {
+
+
+//             // width: 100%;
+//             margin-bottom: 30px;
+
+//             .upload-state {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 flex-direction: column;
+//                 // padding: 15px;
+//                 border: 1px solid #ccc;
+//                 padding: 5px;
+//                 border-radius: 5px;
+
+//                 p {
+//                     font-size: 13px;
+//                     margin-left: 70px;
+//                     margin-right: 90px;
+
+
+//                     span {
+//                         color: #189B62;
+//                         font-weight: bold;
+//                         cursor: pointer;
+//                     }
+//                 }
+//             }
+
+
+//             .dropzone {
+//                 border: 1px solid #ccc;
+//                 padding: 5px;
+//                 border-radius: 5px;
+//                 margin-top: 10px;
+//                 width: 350px;
+
+//                 .dropfile {
+//                     display: flex;
+//                     justify-content: space-between;
+//                     align-items: center;
+//                     width: 100%;
+
+//                     p {
+//                         margin-right: 10px;
+//                     }
+//                 }
+
+//                 .drop-progress {
+//                     flex-grow: 1;
+//                     display: flex;
+//                     align-items: center;
+//                     margin-top: 7px;
+
+//                     .progress {
+//                         width: 100%;
+//                         background-color: #189B62;
+//                         border: none;
+//                         border-radius: 15px;
+//                         height: 5px;
+//                     }
+
+//                     span {
+//                         margin-left: 20px;
+//                     }
+//                 }
+
+//                 img {
+//                     cursor: pointer;
+//                 }
+//             }
+
+
+//         }
+
+
+//         @media screen and (max-width: 768px) {
+//             flex-direction: column;
+
+//             .image-container,
+//             .farmreg {
+//                 max-width: none;
+//                 margin: 0;
+//             }
+
+//             .reg-container {
+//                 flex-direction: row;
+//                 align-items: center;
+//             }
+
+
+
+//         }
+//     }
+// }
+
 .farmreg-container {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     gap: 7%;
 
     .image-container {
-        flex: 1;
-        margin-right: 20px;
-        margin: 45px;
+        flex: 1 1 auto;
         max-width: 32%;
-
-        position: relative;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        margin: 45px;
 
         .farm-image {
             width: 100%;
@@ -29,37 +349,38 @@
             z-index: 99;
 
             .modal-container {
-
-                z-index: 1000;
                 border: 1px solid grey;
                 background-color: white;
-                width: 30%;
+                width: 90%;
+                max-width: 350px; // Adjust as needed
                 height: 40%;
                 padding: 20px;
                 border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
 
                 .modal-content {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-right: 75px;
 
                     .modal-logo {
                         width: 15%;
                         height: 15%;
-                        margin-left: 60px;
+                        // margin-left: 10px;
                     }
 
-
                     h3 {
-                        margin-left: 4em;
+                        // margin-left: 4em;
                         margin-bottom: 9px;
                     }
 
                     p {
                         font-size: 12px;
-                        margin-left: 7em;
-                        margin-bottom: 14px;
+                        // margin-left: 7em;
+                        margin-bottom: 12px;
                         font-family: "Raleway", sans-serif;
                         font-size: 14px;
                     }
@@ -68,45 +389,36 @@
                         width: 150px;
                         height: 50px;
 
-                        .modal-button2 {
+                        .modal-button2,
+                        .modal-button1 {
                             border: 1px solid grey;
                             background-color: white;
-                            width: 17vw;
-                            height: 3vw;
-                            font-size: 1vw;
+                            width: 100%;
+                            max-width: 150px; // Adjust as needed
+                            height: 30px; // Adjust as needed
+                            font-size: 12px;
                             border-radius: 5px;
                             cursor: pointer;
-                            color: rgb(74, 74, 74);
                             margin-top: 15px;
                         }
 
                         .modal-button1 {
                             color: white;
                             background-color: #17714a;
-                            width: 17vw;
-                            height: 3vw;
-                            font-size: 1vw;
-                            border-radius: 5px;
-                            cursor: pointer;
-                            outline: none;
                             border-color: transparent;
+                            outline: none;
                         }
                     }
-
                 }
-
             }
-
         }
-
-
     }
 
-
-
     .farmreg {
-        flex: 1;
-        max-width: 550px;
+        flex: 1 1 auto;
+        // max-width: calc(68% - 20px); 
+        margin-bottom: 45px;
+        // min-width: 550px;
 
         .farmreg-form-container {
             margin: 40px;
@@ -115,12 +427,11 @@
 
         h1,
         h3,
-        p {
+        .reg-text {
             margin-bottom: 15px;
             font-family: "Raleway", sans-serif;
             font-size: 14px;
         }
-
 
         label {
             display: block;
@@ -141,7 +452,6 @@
         }
 
         .reg-container {
-
             .farmcord {
                 display: flex;
                 gap: 10px;
@@ -157,6 +467,7 @@
             .cord-text {
                 color: grey;
                 font-size: 12px;
+                margin-bottom: 14px;
             }
         }
 
@@ -183,8 +494,6 @@
                     margin-left: auto;
                     margin-bottom: 16px;
                 }
-
-
             }
 
             .month-select {
@@ -199,9 +508,7 @@
                 label {
                     font-size: 14px;
                 }
-
             }
-
         }
 
         .add-crop {
@@ -213,18 +520,17 @@
             font-weight: bold;
             font-size: 12px;
             background-color: #eafbf4;
-            // margin-bottom: 10px;
         }
 
         .upload-text {
             margin-top: 20px;
+            font-family: "Raleway", sans-serif;
+            font-size: 13px;
+            margin-bottom: 12px;
 
         }
 
         .upload-section {
-
-
-            // width: 100%;
             margin-bottom: 30px;
 
             .upload-state {
@@ -232,7 +538,6 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                // padding: 15px;
                 border: 1px solid #ccc;
                 padding: 5px;
                 border-radius: 5px;
@@ -242,7 +547,6 @@
                     margin-left: 70px;
                     margin-right: 90px;
 
-
                     span {
                         color: #189B62;
                         font-weight: bold;
@@ -250,7 +554,6 @@
                     }
                 }
             }
-
 
             .dropzone {
                 border: 1px solid #ccc;
@@ -293,22 +596,27 @@
                     cursor: pointer;
                 }
             }
-
-
         }
+    }
 
-
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .farmreg-container {
             flex-direction: column;
 
             .image-container,
             .farmreg {
-                max-width: none;
-                margin: 0;
+                max-width: 50%;
             }
 
-            .reg-container {
-                flex-direction: row;
+            .modal {
+                align-items: flex-start;
+            }
+
+            .modal-container {
+                width: 90%;
+            }
+
+            .modal-content {
                 align-items: center;
             }
         }

@@ -126,7 +126,7 @@ const Farmreg = () => {
                 <div className="farmreg-form-container">
                     <form>
                         <h1>Create Account</h1>
-                        <p>Farm Registration</p>
+                        <p className='reg-text'>Farm Registration</p>
                         <div>
                             <label htmlFor="farmName">Farm Name*</label>
                             <input type="text" id="farmName" name="farmName" placeholder="Enter farm name" />
