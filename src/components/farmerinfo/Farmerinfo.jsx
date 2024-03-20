@@ -13,6 +13,8 @@ import Step from '../stepper/Stepper';
 import userIcon from '../../assets/Vector.svg'
 import Icon from '../../assets/Icon.png'
 import { useNavigate } from "react-router-dom"
+import Button from '../button/Button';
+
 
 
 // import { Flag } from 'react-flag-kit';
@@ -293,11 +295,8 @@ const Form = () => {
 
                         </div>
 
-                        <div className='button-section'>
+                        <Button backRoute="/" continueRoute="/bankdetails" />
 
-                            <button className='back' type="submit" onClick={handleGoBack}>Back</button>
-                            <button className='continue' type="submit" onClick={handleSubmit}>Continue</button>
-                        </div>
                     </form>
                 </div>
 

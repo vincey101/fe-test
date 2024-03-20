@@ -207,6 +207,7 @@ const Farmreg = () => {
                             <button className='back' type="submit" onClick={handleBack}>Back</button>
                             <button className='continue' type="submit" onClick={handleContinue} >Add Farm</button>
                         </div>
+
                     </form>
                 </div>
             </div>

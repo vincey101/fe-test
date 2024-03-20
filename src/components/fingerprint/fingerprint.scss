@@ -54,19 +54,19 @@
                 align-items: center;
                 gap: 7px;
                 margin-top: 40px;
-                margin-left: 15em;
+                margin-left: 300px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 padding: 3px;
-                width: 100px;
+                width: 120px;
                 margin-bottom: 30px;
 
                 input[type="checkbox"] {
                     accent-color: #189B62;
                 }
 
-                label {
-                    font-size: 12px;
+                .skip-container {
+                    font-size: 10px;
                 }
             }
 
@@ -78,14 +78,12 @@
 
         .image-container,
         .text-container {
-            flex: none;
-            width: 80%;
-            margin-bottom: 20px;
-
+            margin: 0 auto;
+            width: 90%;
         }
 
-        .text-container {
-            margin-left: 50px;
+        .image-container {
+            margin-bottom: 20px;
         }
     }
 }

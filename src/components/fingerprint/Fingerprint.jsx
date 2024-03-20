@@ -56,7 +56,7 @@ const Fingerprint = () => {
                             checked={isChecked}
                             onChange={handleCheckboxChange}
                         />
-                        <label htmlFor="skipCheckbox">Skip for now</label>
+                        <label htmlFor="skip-container">Skip for now</label>
                     </div>
 
 
