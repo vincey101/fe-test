@@ -25,13 +25,11 @@ const Farmreg = () => {
     const [numFarms, setNumFarms] = useState(1);
     const [files, setFiles] = useState([]);
     const [showModal, setShowModal] = useState(false);
-    // const [farmAdded, setFarmAdded] = useState(false);
     const [farmName, setFarmName] = useState('');
     const [longitude, setLongitude] = useState('');
     const [latitude, setLatitude] = useState('');
     const [documents, setDocuments] = useState(null);
     const [farmData, setFarmData] = useState([]);
-    // const [farms, setFarms] = useState([]);
     const [formValidated, setFormValidated] = useState(false);
     const [farmDataVisible, setFarmDataVisible] = useState(false);
     const [editedFarmIndex, setEditedFarmIndex] = useState(null);
