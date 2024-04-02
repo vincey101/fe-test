@@ -195,7 +195,7 @@ const Farmreg = () => {
         setFarmName(farmToEdit.farmName);
         setLongitude(farmToEdit.longitude);
         setLatitude(farmToEdit.latitude);
-        setCrops(farmToEdit.crop);
+        setCrops([...farmToEdit.crops]);
         setDocuments(farmToEdit.documents);
         setEditedFarmIndex(index);
         setEditedFarmData({ ...farmToEdit, farmNumber: index + 1 });
