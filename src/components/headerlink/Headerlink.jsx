@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './headerlink.scss'
 const Headerlink = () => {
     return (
@@ -9,7 +10,7 @@ const Headerlink = () => {
                 </div>
                 <div className='account'>
                     <p>Already have an account?</p>
-                    <a className='login' href="/login"> Log in</a>
+                    <Link className='login' to="/login">Log in</Link>
                 </div>
             </div>
         </div>

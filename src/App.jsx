@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Farmerinfo from './components/farmerinfo/Farmerinfo.jsx'
 import Bankdetails from './components/bankdetails/Bankdetails.jsx'
