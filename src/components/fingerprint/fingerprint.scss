@@ -65,6 +65,10 @@
                     accent-color: #189B62;
                 }
 
+                @media (max-width: 768px) {
+                    margin-left: 100px;
+                }
+
                 .skip-container {
                     font-size: 10px;
                 }
@@ -85,5 +89,6 @@
         .image-container {
             margin-bottom: 20px;
         }
+
     }
 }

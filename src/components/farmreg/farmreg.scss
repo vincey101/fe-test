@@ -66,7 +66,7 @@
                     }
 
                     .modal-button {
-                        width: 150px;
+                        width: 180px;
                         height: 50px;
 
                         .modal-button2,
@@ -100,10 +100,160 @@
         margin-bottom: 45px;
         max-width: 600px;
 
+        // &.modal-open {
+        //     border: 1px solid red;
+        // }
+
         .farmreg-form-container {
             margin: 40px;
             width: 350px;
+            // position: relative;
+
+            .farm-number {
+                text-align: center;
+                font-size: 13px;
+                color: grey;
+            }
+
+            .farm-container {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                .line {
+                    flex-grow: 1;
+                    height: 1px;
+                    background-color: #f6d676;
+                }
+
+                .farm-number {
+                    margin: 0 10px;
+                }
+            }
+
+            .farm-details-card {
+                font-family: "Raleway", sans-serif;
+                font-size: 14px;
+
+                .splide__pagination__page {
+                    background-color: black;
+                    /* Change the color of the pagination dot to black */
+                }
+
+                // display: flex;
+                .farm-border {
+                    border: 1px solid #e9c867;
+                    padding: 10px;
+                    border-radius: 5px;
+
+                    .farm-actions {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .edit-delete {
+                            display: flex;
+                            gap: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    // margin-bottom: 10px;
+                    .farm-number {
+                        color: #7a5d06;
+                    }
+
+                    .line1 {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #e9c867;
+                        // margin-top: 20px;
+                        // margin-bottom: 20px;
+                    }
+
+                    .farm-info,
+                    .farm-info2 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        padding: 10px;
+
+
+                        .farm-design {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 6px;
+
+                        }
+
+                        .title {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 5px;
+
+                        }
+                        .crops{
+                            display: flex;
+                            // justify-content: center;
+                            gap: 4px;
+                            .crop-design {
+                                border: 1px solid #e9c867;
+                                border-radius: 10px;
+                                width: 60px;
+                                font-size: 12px;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                            }
+                        }
+
+
+                        .details {
+                            display: flex;
+                            gap: 6px;
+                            // flex-direction: column;
+
+                            align-items: center;
+
+                            .longitude-text {
+                                color: #17714a;
+                                border: 1px solid #e7edea;
+                                border-radius: 10px;
+                                width: 70px;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                background-color: #e7edea;
+
+                            }
+
+                            .latitude-text {
+                                color: blue;
+                                font-weight: 500;
+                                border: 1px solid #ebecf4;
+                                border-radius: 10px;
+                                width: 65px;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                background-color: #ebecf4;
+
+                            }
+
+                            .farm-name {
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                font-size: 12px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
         }
+
 
         h1,
         h3,
@@ -200,6 +350,7 @@
             font-weight: bold;
             font-size: 12px;
             background-color: #eafbf4;
+            cursor: pointer;
         }
 
         .upload-text {
@@ -212,6 +363,7 @@
 
         .upload-section {
             margin-bottom: 30px;
+            cursor: pointer;
 
             .upload-state {
                 display: flex;
@@ -277,6 +429,14 @@
                 }
             }
         }
+
+                .error-message {
+                    color: red;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    text-align: center;
+                    font-family: "Raleway", sans-serif;
+                }
     }
 
     @media screen and (max-width: 768px) {

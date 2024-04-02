@@ -9,7 +9,7 @@ const Headerlink = () => {
                 </div>
                 <div className='account'>
                     <p>Already have an account?</p>
-                    <a className='login' href="/"> Log in</a>
+                    <a className='login' href="/login"> Log in</a>
                 </div>
             </div>
         </div>

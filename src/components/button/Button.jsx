@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function Button({ onClick, backRoute, continueRoute }) {
+function Button({ onClick, backRoute, continueRoute, setPhoneNumber }) {
     const navigate = useNavigate();
 
     const handleGoBack = () => {
@@ -16,7 +16,14 @@ function Button({ onClick, backRoute, continueRoute }) {
     };
 
     const handleContinue = () => {
+        // if (continueRoute) {
+        //     navigate(continueRoute);
+        // } else {
+        //     if (onClick) onClick();
+        // }
+
         if (continueRoute) {
+            // if (setPhoneNumber) setPhoneNumber();
             navigate(continueRoute);
         } else {
             if (onClick) onClick();
@@ -26,8 +33,8 @@ function Button({ onClick, backRoute, continueRoute }) {
     return (
         <div className='button-section'>
 
-            <button className='back' type="submit" onClick={handleGoBack}>Back</button>
-            <button className='continue' type="submit" onClick={handleContinue}>Continue</button>
+            <button className='back' type="button" onClick={handleGoBack}>Back</button>
+            <button className='continue' type="button" onClick={handleContinue}>Continue</button>
         </div>
     )
 }

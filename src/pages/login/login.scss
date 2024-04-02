@@ -1,0 +1,193 @@
+.login-container {
+    display: flex;
+    gap: 10%;
+    height: 100vh;
+
+    .login-image-container {
+        display: flex;
+        margin: 40px;
+    }
+
+    .login-form-container {
+
+        margin-top: 15px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: "Raleway", sans-serif;
+            font-size: 13px;
+        }
+
+        .login-form {
+            width: 90%;
+            max-width: 410px;
+            margin: 50px;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+
+            }
+
+
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: grey;
+                font-family: "Raleway", sans-serif;
+            }
+
+            .login-inputs {
+                text-align: left;
+
+                .form-group {
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &.error {
+
+                        input[type='text'],
+                        input[type='password'] {
+                            border-color: red;
+                        }
+                    }
+
+                    .error-message {
+                        color: red;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+
+                    .password-section {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        .password-field {
+                            width: 80%;
+                        }
+
+                        .show-password {
+                            position: absolute;
+                            top: 55%;
+                            right: 110px;
+                            width: 15px;
+                            color: grey;
+                        }
+
+                        .thumb {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+
+
+                    .num-text {
+                        margin-top: 5px;
+                        font-size: 13px;
+                        color: grey;
+                    }
+
+                    label {
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+
+                    input[type='text'],
+                    input[type='password'] {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            font-size: 13px;
+                        }
+
+
+                    }
+
+                }
+
+                .checkbox-group {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+
+                        input[type='checkbox'] {
+                            margin-right: 5px;
+                            accent-color: #189B62;
+                        }
+
+                        .rem-text {
+                            font-weight: normal;
+                            font-size: 13px;
+                        }
+                    }
+
+                    .forgot-password {
+                        font-size: 12px;
+                        cursor: pointer;
+                        color: #189B62;
+                        font-family: "Raleway", sans-serif;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .login-btn {
+                width: 100%;
+                padding: 12px;
+                background-color: #189B62;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #ade4cc;
+                }
+            }
+
+            .signup-text {
+                margin-top: 20px;
+                font-size: 14px;
+                text-align: center;
+
+                a {
+                    color: #189B62;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .login-image-container {
+            margin-bottom: 0;
+        }
+
+        .login-form-container {
+            align-items: stretch;
+        }
+
+    }
+}

@@ -5,19 +5,18 @@ import progress from '../../assets/progress.png';
 import mark from '../../assets/mark.png';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import { CountryDropdown, CountryRegionData } from 'react-country-region-selector';
+// import { CountryDropdown, CountryRegionData } from 'react-country-region-selector';
 import Headerlink from '../headerlink/Headerlink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import Step from '../stepper/Stepper';
+// import Step from '../stepper/Stepper';
 import userIcon from '../../assets/Vector.svg'
 import Icon from '../../assets/Icon.png'
-import { useNavigate } from "react-router-dom"
 import Button from '../button/Button';
 
 
 
-// import { Flag } from 'react-flag-kit';
+
 
 const Form = () => {
     const [phone, setPhone] = useState();
@@ -34,10 +33,10 @@ const Form = () => {
     const [passwordError, setPasswordError] = useState({ length: '', specialChar: '' });
     const [passwordTouched, setPasswordTouched] = useState(false);
 
-
-
     const handlePhoneChange = (value) => {
         setPhone(value);
+        localStorage.setItem('phoneNumber', value);
+
     };
 
 
@@ -61,13 +60,6 @@ const Form = () => {
     const handleFileUpload = (e) => {
         const file = e.target.files[0];
     };
-
-
-    // const handlePasswordChange = (e) => {
-    //     const value = e.target.value;
-    //     setPassword(value);
-    //     validatePassword(value);
-    // };
 
     const handlePasswordChange = (e) => {
         const value = e.target.value;
@@ -116,17 +108,14 @@ const Form = () => {
 
     const ageOptions = Array.from({ length: 100 }, (_, i) => i + 1);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        navigate("../bankdetails", { replace: true })
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     navigate("../bankdetails", { replace: true })
 
-    }
+    // }
 
-    const handleGoBack = () => {
-        window.history.back()
-    };
 
     return (
         <div className="form-container">
@@ -163,7 +152,7 @@ const Form = () => {
                                 defaultCountry="NG"
                                 value={phone}
                                 onChange={handlePhoneChange}
-                                inputStyle={{ width: '30%' }}
+                                // inputStyle={{ width: '30%' }}
                             />
                         </div>
 
