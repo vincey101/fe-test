@@ -14,9 +14,6 @@
             text-decoration: none;
             color: black;
 
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         .account {
@@ -26,6 +23,7 @@
 
             .login {
                 color: #189B62;
+                text-decoration: none;
             }
         }
     }
